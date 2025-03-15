@@ -26,7 +26,7 @@ function App() {
     setAuthState({ isAuthenticated: false, token: null });
   };
 
-  axios.defaults.baseURL = "http://localhost:5000";
+  axios.defaults.baseURL = "https://backtechforing.vercel.app";
 
   return (
     <AuthContext.Provider value={{ ...authState, login, logout }}>
